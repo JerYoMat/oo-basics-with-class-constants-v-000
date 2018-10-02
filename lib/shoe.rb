@@ -11,8 +11,16 @@ class Shoe
   end
   
   def brand=(brand)
+<<<<<<< HEAD
       @brand = brand 
       BRANDS.uniq!
+=======
+    if BRANDS.include?(brand) == false 
+      BRANDS << brand 
+    end 
+    @brand = brand 
+      
+>>>>>>> 1c6a64cc8ea5f4000f6552ce161e690c95e6da71
   end 
   
   def cobble
